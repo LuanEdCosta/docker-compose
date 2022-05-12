@@ -1201,6 +1201,39 @@ services:
   #       max-file: '5'
 # GUI to postgres - END
 
+  pga-backend:
+    image: artifactory.cpqd.com.br/docker/cpqd/pga/gs-docker/cpqd-pga:1.1.0-RC08
+    container_name: pga-backend
+    restart: always
+    user: root
+    depends_on:
+      - keycloak
+    ports:
+      - "7878:8080"
+      - "7888:8788"
+    environment:      
+      - SERVER_PORT=7878
+      - KEYCLOAK_URL=http://keycloak:8000/auth
+      - KEYCLOAK_REALM=admin
+      - KEYCLOAK_IMAGES_FILES_DIR=/opt/jboss/app/images 
+      - AUDIT_EXTERNAL_URL=http://keycloak:8000/auditevent
+    volumes:
+      - "pga-backend-logs-volume:/opt/jboss/app/server-23.0.2.Final/wildfly-23.0.2.Final/standalone/log:rw"
+      - "pga-backend-images-volume:/opt/jboss/app/images:rw"
+
+  pga-frontend:
+    image: artifactory.cpqd.com.br/docker/cpqd/pga/utils/gs-gui:1.0.0
+    container_name: pga-frontend
+    restart: always
+    depends_on:
+      - pga-backend
+    ports:
+      - "9081:80"
+    volumes:      
+      - "./pga/keycloak.json:/usr/share/nginx/html/keycloak.json:rw"
+    environment:
+      - API_HOST=pga-backend
+      - API_PORT=7878
 
 volumes:
   ejbca-volume:
@@ -1230,6 +1263,8 @@ volumes:
   influxdb-volume:
   backstage-redis-volume:
   acl-redis-volume:
+  pga-backend-logs-volume:
+  pga-backend-images-volume:
 
 networks:
 ## ## **`Gateway-static-dojot_default-3`**

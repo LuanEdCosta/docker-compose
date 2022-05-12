@@ -169,6 +169,10 @@ addAuthToEndpoint "data-manager-export"
 
 createEndpoint "backstage" "http://backstage:3000"  '"/backstage"' "false"
 
+# service: pga
+
+createEndpoint "pga" "http://pga-backend:8080"  '"/pga"' "false"
+
 # service: cron
 
 createEndpoint "cron" "http://cron:5000/"  '"/cron"' "false"
