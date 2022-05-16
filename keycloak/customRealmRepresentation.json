@@ -84,7 +84,9 @@
         },
         "clientRole": false,
         "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
-        "attributes": {}
+        "attributes": {
+          "role": ["role_user"]
+        }
       },
       {
         "id": "5239d043-0868-4ee8-bf72-11b457e93fb1",
@@ -101,7 +103,62 @@
         "composite": false,
         "clientRole": false,
         "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
-        "attributes": {}
+        "attributes": {
+          "role": ["role_user"]
+        }
+      },
+      {
+        "id": "aa7662a5-7e2d-43a0-96d2-b717994862ca",
+        "name": "rest-all",
+        "description": "Completo",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
+        "attributes": {
+          "role": ["role_user"]
+        }
+      },
+      {
+        "id": "81dcdfbd-3122-4409-999e-f0961192bf54",
+        "name": "kiemgmt",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
+        "attributes": {
+          "role": ["role_user"]
+        }
+      },
+      {
+        "id": "c6ae78ae-e444-4114-ab50-85053d5d3c9e",
+        "name": "Administrators",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
+        "attributes": {
+          "role": ["role_user"]
+        }
+      },
+      {
+        "id": "6f93fd82-a503-4b36-9b67-46830767b3d2",
+        "name": "company",
+        "description": "Completo",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
+        "attributes": {
+          "role": ["role_company"]
+        }
+      },
+      {
+        "id": "794b6334-9b3d-4df1-af6e-fa516c2c170e",
+        "name": "kie-server",
+        "description": "Completo",
+        "composite": false,
+        "clientRole": false,
+        "containerId": "bea9700a-4561-4075-a089-ce49cfd39516",
+        "attributes": {
+          "role": ["role_user"]
+        }
       }
     ],
     "client": {
@@ -412,10 +469,175 @@
           "containerId": "c69613a1-980a-4b2a-b5e0-d7db8587e02a",
           "attributes": {}
         }
+      ],
+      "ADM": [
+        {
+          "id": "2e95e510-f73e-469b-a859-76c7e16bec11",
+          "name": "image_ADM",
+          "description": "https://api.iconify.design/fa-cog.svg",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "ADM",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        },
+        {
+          "id": "7fab91cd-9d97-4187-9717-264d4fd006ed",
+          "name": "client",
+          "description": "Completo",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "ADM",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        }
+      ],
+      "Geoanalytics": [
+        {
+          "id": "978a39b5-4927-4f8d-9552-0d2b8c6b3137",
+          "name": "client",
+          "description": "Completo",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "Geoanalytics",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        },
+        {
+          "id": "70cbf9cc-02bd-4cbf-89e6-ba38dc019532",
+          "name": "image_Geoanalytics",
+          "description": "https://api.iconify.design/fa-bar-chart.svg",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "Geoanalytics",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        }
+      ],
+      "PGA": [
+        {
+          "id": "d0091d15-0839-4b8d-8703-05fd3843262e",
+          "name": "image_PGA",
+          "description": "https://api.iconify.design/fa-cog.svg",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "PGA",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        }
+      ],
+      "kie-server": [
+        {
+          "id": "76407f63-718b-47c3-8fd5-3933ed21927e",
+          "name": "image_kie-server",
+          "description": "https://api.iconify.design/fa-code-fork.svg",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "kie-server",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        },
+        {
+          "id": "1c7ef1b9-ee64-476b-a59f-195352207e50",
+          "name": "client",
+          "description": "Completo",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "kie-server",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        }
+      ],
+      "business-central": [
+        {
+          "id": "fc2c510a-e597-4a25-b3ab-2d650460a45c",
+          "name": "client",
+          "description": "Completo",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "business-central",
+          "attributes": {
+            "role": ["role_client"]
+          }
+        },
+        {
+          "id": "5990ad1a-718d-44ca-a8a0-f72507284ccc",
+          "name": "image_business-central",
+          "description": "https://api.iconify.design/fa-code-fork.svg",
+          "composite": false,
+          "clientRole": true,
+          "containerId": "business-central",
+          "attributes": {}
+        }
       ]
     }
   },
-  "groups": [],
+  "groups": [
+    {
+      "id": "faa75697-843a-4e59-9ca6-a80e7e8b6847",
+      "name": "companys",
+      "path": "/companys",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {},
+      "subGroups": [
+        {
+          "id": "9ce90207-0556-4ed3-86dc-2e4df9d31689",
+          "name": "company",
+          "path": "/companys/company",
+          "attributes": {},
+          "realmRoles": [],
+          "clientRoles": {},
+          "subGroups": []
+        }
+      ]
+    },
+    {
+      "id": "d520798b-0615-4d50-a208-a176885ad700",
+      "name": "groupCompanyUser",
+      "path": "/groupCompanyUser",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {},
+      "subGroups": [
+        {
+          "id": "401ee56d-5e85-4d33-997d-c64e1208d833",
+          "name": "company",
+          "path": "/groupCompanyUser/company",
+          "attributes": {},
+          "realmRoles": [],
+          "clientRoles": {},
+          "subGroups": []
+        }
+      ]
+    },
+    {
+      "id": "b4520c05-8e6c-4ca2-9c8e-836c7eda5cab",
+      "name": "users",
+      "path": "/users",
+      "attributes": {},
+      "realmRoles": [],
+      "clientRoles": {},
+      "subGroups": [
+        {
+          "id": "ec227a54-2c43-400e-8863-29a773670cff",
+          "name": "company",
+          "path": "/users/company",
+          "attributes": {},
+          "realmRoles": [],
+          "clientRoles": {},
+          "subGroups": []
+        }
+      ]
+    }
+  ],
   "defaultRoles": ["uma_authorization", "offline_access"],
   "requiredCredentials": ["password"],
   "passwordPolicy": "passwordBlacklist(dojot-password-blacklist.txt) and length(8) and notUsername(undefined) and notEmail(undefined) and specialChars(1) and upperCase(1) and lowerCase(1) and digits(1)",
@@ -454,7 +676,12 @@
       "totp": false,
       "emailVerified": false,
       "attributes": {
-        "locale": ["en"]
+        "LAST_LOGON": ["2021-12-17"],
+        "RESPONSIBLE": ["cpqd"],
+        "AUTHENTICATION": ["INTERNAL"],
+        "PHOTO": [],
+        "locale": ["en"],
+        "COMPANY": ["cpqd"]
       },
       "credentials": [
         {
@@ -467,7 +694,45 @@
       ],
       "disableableCredentialTypes": [],
       "requiredActions": ["UPDATE_PASSWORD"],
-      "realmRoles": ["offline_access", "uma_authorization", "admin"],
+      "realmRoles": [
+        "offline_access",
+        "uma_authorization",
+        "admin",
+        "Administrators",
+        "rest-all",
+        "kiemgmt",
+        "kie-server"
+      ],
+      "clientRoles": {
+        "realm-management": [
+          "manage-events",
+          "view-realm",
+          "view-events",
+          "view-clients",
+          "manage-realm",
+          "query-realms",
+          "realm-admin",
+          "manage-users",
+          "query-users",
+          "view-users",
+          "query-clients",
+          "view-authorization",
+          "impersonation",
+          "view-identity-providers",
+          "manage-clients"
+        ],
+        "ADM": ["client"],
+        "Geoanalytics": ["client"],
+        "kie-server": ["client"],
+        "broker": ["read-token"],
+        "business-central": ["client"],
+        "account": [
+          "view-applications",
+          "delete-account",
+          "view-consent",
+          "manage-consent"
+        ]
+      },
       "notBefore": 0,
       "groups": []
     },
@@ -485,6 +750,84 @@
       "clientRoles": {
         "account": ["view-profile", "manage-account"],
         "kong": ["uma_protection"]
+      },
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "2fe5ef31-f05f-4e69-95ab-6d5cafb6365c",
+      "createdTimestamp": 1638556887997,
+      "username": "service-account-adm",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "ADM",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": ["uma_authorization", "offline_access"],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "2df719aa-8bb2-45e8-b4b0-00a4fba554d3",
+      "createdTimestamp": 1638556884712,
+      "username": "service-account-geoanalytics",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "Geoanalytics",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": ["uma_authorization", "offline_access"],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "ebeb1943-d383-4edb-9d56-a7c3c663b90c",
+      "createdTimestamp": 1638556895678,
+      "username": "service-account-kie-server",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "kie-server",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": ["uma_authorization", "offline_access"],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "f4debd5d-947a-45b3-a779-f64a2df7cb22",
+      "createdTimestamp": 1638556890891,
+      "username": "service-account-pga",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "PGA",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": ["uma_authorization", "offline_access"],
+      "notBefore": 0,
+      "groups": []
+    },
+    {
+      "id": "b46c5130-96cc-4a5b-992e-41caa1000b9d",
+      "createdTimestamp": 1639740450882,
+      "username": "service-account-realm-management",
+      "enabled": true,
+      "totp": false,
+      "emailVerified": false,
+      "serviceAccountClientId": "realm-management",
+      "credentials": [],
+      "disableableCredentialTypes": [],
+      "requiredActions": [],
+      "realmRoles": ["uma_authorization", "offline_access"],
+      "clientRoles": {
+        "realm-management": ["uma_protection"]
       },
       "notBefore": 0,
       "groups": []
@@ -616,7 +959,7 @@
       "consentRequired": false,
       "standardFlowEnabled": false,
       "implicitFlowEnabled": false,
-      "directAccessGrantsEnabled": false,
+      "directAccessGrantsEnabled": true,
       "serviceAccountsEnabled": false,
       "publicClient": true,
       "frontchannelLogout": false,

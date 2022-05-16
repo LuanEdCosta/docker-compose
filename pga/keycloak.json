@@ -2,7 +2,7 @@
   "realm": "admin",
   "auth-server-url": "http://localhost:8000/auth/",
   "ssl-required": "external",
-  "resource": "gui",
+  "resource": "ADM",
   "public-client": true,
   "verify-token-audience": true,
   "use-resource-role-mappings": true,
