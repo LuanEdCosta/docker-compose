@@ -2358,10 +2358,7 @@
         "pkce.code.challenge.method": "S256",
         "saml.onetimeuse.condition": "false"
       },
-      "authenticationFlowBindingOverrides": {
-        "direct_grant": "514cb7c1-af30-4bed-8f8d-b38dd7c32f80",
-        "browser": "37de5060-8d46-4560-8efa-3b3366f82b89"
-      },
+      "authenticationFlowBindingOverrides": {},
       "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": -1,
       "protocolMappers": [

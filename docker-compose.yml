@@ -1213,10 +1213,10 @@ services:
       - "7888:8788"
     environment:      
       - SERVER_PORT=7878
-      - KEYCLOAK_URL=http://keycloak:8000/auth
+      - KEYCLOAK_URL=http://apigw:8000/auth
       - KEYCLOAK_REALM=admin
       - KEYCLOAK_IMAGES_FILES_DIR=/opt/jboss/app/images 
-      - AUDIT_EXTERNAL_URL=http://keycloak:8000/auditevent
+      - AUDIT_EXTERNAL_URL=http://apigw:8000/auditevent
     volumes:
       - "pga-backend-logs-volume:/opt/jboss/app/server-23.0.2.Final/wildfly-23.0.2.Final/standalone/log:rw"
       - "pga-backend-images-volume:/opt/jboss/app/images:rw"
@@ -1232,7 +1232,7 @@ services:
     volumes:      
       - "./pga/keycloak.json:/usr/share/nginx/html/keycloak.json:rw"
     environment:
-      - API_HOST=pga-backend
+      - API_HOST=172.18.0.1
       - API_PORT=7878
 
 volumes:
